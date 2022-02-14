@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/flexgrid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div id="fullpage">
+    <div class="section home-section">
+      <section id="home">
+        <div class="boxes">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="home__inner center-xs ">
+          <div class="menu__bg"></div>
+          <button class="home__menu menu" onclick="menuClick()">
+            <div class="menu__line line-top"></div>
+            <div class="menu__line line-middle"></div>
+            <div class="menu__line line-bottom"></div>
+          </button>
+          <div class="home__nav">
+            <a href="#section1" class="menu__button home-button" onclick="homeBtn()"><i class='bx bxs-home'></i><span>home</span></a>
+            <a href="#section2" class="menu__button about-button"  onclick="aboutDrag()"><i class='bx bxs-user-circle'></i><span>about</span></a>
+            <a href="#section3" class="menu__button portfolio-button"  onclick="portfolioDrag()"><i class='bx bxs-shopping-bag-alt'></i><span>portfolio</span></a>
+            <a href="#section4" class="menu__button contact-button"  onclick="contactsDrag()"><i class='bx bxs-envelope'></i><span>contacts</span></a>
+          </div>
+          <div class="home__text" >
+            <span>I am</span>
+            <div class="home__title glitch" data-text="Davron">Davron</div>
+            <div class="glow" >Davron</div>
+            <p class="home__slogan">Web developer, programmer, freelancer</p>
+            <div class="home__links">
+              <a class="home__link" href="https://instagram.com/davr1wka" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+              <a class="home__link" href="https://www.youtube.com" target="_blank"><i class='bx bxl-youtube'></i></a>
+              <a class="home__link" href="https://telegram.me/davr1wka" target="_blank"><i class='bx bxl-telegram'></i></a>
+              <a class="home__link" href="https://github.com/Thirsty22" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="about-section" class="section">
+      <section id="about" class="about-hidden">
+        <div class=" container">
+          <div class="boxes">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <h1 class="about__title title">Hello, I am Davron Gulamboyev</h1>
+          <div class="about__inner row center-xs">
+            <div class="about__image-wrap col-xs-12 col-md-6">
+              <img src="img/me.jpg" alt="image" class="about__img glitch">
+            </div>
+            <div class="about__desc info col-xs-12 col-md-6 start-xs">
+              <div class="info__wrap">
+                <h3 class="info__title">Some words about me</h3>
+                <p class="info__paragraph">
+                  I am Junior Back-end developer who has three month of experience in making modern and 
+                  responsive web sites and I am currently studying in intensive Back-end bootcamp course 
+                  which was establisheb by PDP IT academy. 
+                  I am really into traveling and experiencing other cultures as well as learning different 
+                  languages 
+                  and I am in love with cultural foods.
+                </p>
+                <h3 class="info__title info__list-title">my skills</h3>
+                <ul class="info__list">
+                  <li class="info__item">
+                    <div class="info__skill"><p>Java</p><span>70%</span></div>
+                    <div class="info__skill-rate"><div class="skill-rate xtml"></div></div>
+                  </li>
+                  <li class="info__item">
+                    <div class="info__skill"><p>OOP</p><span>100%</span></div>
+                    <div class="info__skill-rate"><div class="skill-rate css"></div></div>
+                  </li>
+                  <li class="info__item">
+                    <div class="info__skill"><p>API</p><span>80%</span></div>
+                    <div class="info__skill-rate"><div class="skill-rate javascript"></div></div>
+                  </li>
+                  <li class="info__item">
+                    <div class="info__skill"><p>Spring</p><span>70%</span></div>
+                    <div class="info__skill-rate"><div class="skill-rate bootstrap"></div></div>
+                  </li>
+                  <li class="info__item">
+                    <div class="info__skill"><p>Data base</p><span>60%</span></div>
+                    <div class="info__skill-rate"><div class="skill-rate sass"></div></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- <div class="section portfolio-section">
+      <section id="portfolio" class="works-hidden">
+        <div class="boxes">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="portfolio__wrap custom-container">
+          <h2 class="portfolio__title title">my portfolio</h2> -->
+          <!-- Swiper -->
+          <!-- <div class="portfolio__swiper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/myTeam" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://modest-fermat-26d0ca.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/folio" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://folio-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/stark-furniture" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://starkf.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/ai-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://artificials.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/t-pass" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://t-pass.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/laslesVPN" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://lasles-vpn-clone.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/Clerksy-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://clerksy-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="portfolio__project project">
+                    <div class="project__links">
+                      <a href="https://github.com/PulatovSO/signup-form" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://signup-forms.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!-/Swiper -->
+          <!-- <div class="portfolio__projects">
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/myTeam" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://modest-fermat-26d0ca.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/folio" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://folio-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/stark-furniture" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://starkf.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/ai-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://artificials.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/t-pass" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://t-pass.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/laslesVPN" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://lasles-vpn-clone.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/Clerksy-landing-page" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://clerksy-page.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+            <div class="portfolio__project project">
+              <div class="project__links">
+                <a href="https://github.com/PulatovSO/signup-form" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://signup-forms.netlify.app" target="_blank"><i class='bx bx-world'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div> --> 
+
+    <div class="section contacts-section">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <section id="contacts" class="contacts-hidden">
+        <div class="contacts__wrap container row middle-xs">
+          <div class="contacts__desc start-xs">
+            <h2 class="contacts__desc-title title">FEEL FREE TO CONTACT WITH ME!</h2>
+            <p class="contacts__paragraph">
+              If you have any questions, offers or suggesstions please reach out to me. <br> 
+              I look forward to working with you.
+            </p>
+            <a class="contacts__desc-btn" href="tel:998900196036"><i class='bx bxs-phone' ></i> <span>+998 90 019 60 36</span></a>
+            <a class="contacts__desc-btn" href="https://mail.google.com/" target="_blank"><i class='bx bxs-envelope' ></i> <span>gulamboyevd@gmail.com</span></a>
+            <a class="contacts__desc-btn" href="https://goo.gl/maps/tsnhh1eUjwtCjJ659" target="_blank"><i class='bx bxs-map' ></i> <span>Toshkent, Uzbekistan</span></a>
+          </div>
+          <div class="contact__form-wrap">
+            <form action="https://echo.htmlacademy.ru" class="contact__form form center-xs" method="POST">
+              <h2 class="contact__title title">Contact me</h2>
+              <div class="form__block">
+                <input type="text" name="name" id="name" placeholder="name" required>
+              </div>
+              <div class="form__block">
+                <input type="email" name="email" id="email" placeholder="e-mail" required>
+              </div>
+              <div class="form__block">
+                <input type="text" name="subject" id="subject" placeholder="subject" required>
+              </div>
+              <div class="form__block">
+                <textarea name="message" id="message" placeholder="message"></textarea>
+              </div>
+              <button class="contact__btn" type="submit">send message</button>
+            </form>
+          </div>
+          <div class="contacts__map">
+            <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48240.645017536706!2d69.5959423146861!3d40.91486195327293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae3304f22d730d%3A0xc57e44d68ade144!2z0JDRhdCw0L3Qs9Cw0YDQsNC9LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1644833292965!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" allowfullscreen="" loading="lazy"></iframe>
+            <button class="contact__map-btn" type="button" onclick="moveForm()"><i class='bx bxs-map-pin'></i></button>
+          </div>
+        </div>
+        <footer id="site-footer">
+          <div class="footer__links">
+            <a class="footer__link" href="https://instagram.com/davr1wka" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a class="footer__link" href="https://www.youtube.com" target="_blank"><i class='bx bxl-youtube'></i></a>
+            <a class="footer__link" href="https://telegram.me/davr1wka" target="_blank"><i class='bx bxl-telegram'></i></a>
+            <a class="footer__link" href="https://github.com/Thirsty22" target="_blank"><i class='bx bxl-github'></i></a>
+          </div>
+          <p class="footer__copyright">2022 &copy; Rakhmonberdiyev_RR coding</p>
+        </footer>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="js/swiper.js"></script>
+
+</body>
+</html>
